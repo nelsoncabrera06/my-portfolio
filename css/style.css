@@ -284,10 +284,20 @@ img {
     font-family: var(--font-mono);
     font-size: 1rem;
     color: var(--accent-primary);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.2s;
+}
+
+.hero-command {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.3s;
 }
 
 .terminal-prompt {
