@@ -1,0 +1,21 @@
+# Development files
+/dev_local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Optional: npm (if you add dependencies later)
+node_modules/
+package-lock.json
