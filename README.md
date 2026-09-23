@@ -5,7 +5,7 @@ Release Deployment Engineer | DevOps | CI/CD Automation
 ## Live Demo
 
 Check out my portfolio at:
-**https://nelsoncabrera06.github.io/my-porfolio/**
+**https://nelsoncabrera06.github.io/my-portfolio/**
 
 ## Tech Stack
 
