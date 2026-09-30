@@ -73,7 +73,7 @@ function initNavigation() {
 function initScrollAnimations() {
     // Elements to animate
     const animatedElements = document.querySelectorAll(
-        '.timeline-item, .skill-category, .project-card, .education-card, .about-content, .contact-content'
+        '.timeline-item, .skill-category, .ai-card, .ai-cert-section, .project-card, .education-card, .about-content, .contact-content'
     );
 
     // Add fade-in class to elements
@@ -112,6 +112,12 @@ function initScrollAnimations() {
     // Stagger animation for skill categories
     const skillCategories = document.querySelectorAll('.skill-category');
     skillCategories.forEach((item, index) => {
+        item.style.transitionDelay = `${index * 0.1}s`;
+    });
+
+    // Stagger animation for AI cards
+    const aiCards = document.querySelectorAll('.ai-card, .ai-cert-section');
+    aiCards.forEach((item, index) => {
         item.style.transitionDelay = `${index * 0.1}s`;
     });
 
