@@ -1151,9 +1151,9 @@ img {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
-    padding: 16px 18px;
+    padding: 18px 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 14px;
     transition: all var(--transition-normal);
 }
@@ -1177,6 +1177,7 @@ img {
     color: var(--success);
     font-size: 0.95rem;
     flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .ai-cert-details {
@@ -1211,15 +1212,17 @@ img {
     font-size: 0.75rem;
 }
 
-.ai-cert-tag {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
+.ai-cert-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 8px;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.ai-cert-link:hover {
     color: var(--accent-primary);
-    background: rgba(0, 212, 255, 0.08);
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    padding: 3px 8px;
-    border-radius: var(--radius-sm);
-    white-space: nowrap;
 }
 
 .ai-cert-footer-mobile {
@@ -1265,14 +1268,6 @@ img {
 
     .ai-cert-cards-grid {
         grid-template-columns: 1fr;
-    }
-
-    .ai-cert-card {
-        flex-wrap: wrap;
-    }
-
-    .ai-cert-tag {
-        margin-left: auto;
     }
 }
 
