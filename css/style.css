@@ -1425,6 +1425,64 @@ img {
     color: var(--text-muted);
 }
 
+.education-certifications {
+    margin-top: 48px;
+}
+
+.education-cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.education-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.education-subtitle i {
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+}
+
+.education-cert-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.education-cert-all-link:hover {
+    color: var(--accent-primary);
+}
+
+.education-cert-all-link i.fa-linkedin {
+    color: var(--accent-primary);
+    font-size: 0.95rem;
+}
+
+.education-cert-all-link i.fa-arrow-up-right-from-square {
+    font-size: 0.72rem;
+    opacity: 0.8;
+}
+
+.education-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
 /* --------------------------------------------------------------------------
    Contact Section
    -------------------------------------------------------------------------- */

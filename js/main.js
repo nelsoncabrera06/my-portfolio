@@ -73,7 +73,7 @@ function initNavigation() {
 function initScrollAnimations() {
     // Elements to animate
     const animatedElements = document.querySelectorAll(
-        '.timeline-item, .skill-category, .ai-card, .ai-cert-section, .project-card, .education-card, .about-content, .contact-content'
+        '.timeline-item, .skill-category, .ai-card, .ai-cert-section, .project-card, .education-card, .education-certifications, .about-content, .contact-content'
     );
 
     // Add fade-in class to elements
