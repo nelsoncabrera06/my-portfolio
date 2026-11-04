@@ -56,7 +56,8 @@ my-portfolio/
 ├── js/
 │   └── main.js         # Nav, animaciones on-scroll, smooth scroll (229 líneas)
 ├── assets/
-│   └── images/         # laptop.png (favicon), profile.png
+│   ├── images/         # laptop.png (favicon), profile.png
+│   └── certificates/   # PDFs de certificados sin URL pública (lfs158-...)
 ├── dev_local/          # gitignored — notas personales, NO es parte del sitio
 ├── README.md           # público: stack, live demo, contacto
 ├── .gitignore
@@ -257,6 +258,24 @@ highlight del link activo, animaciones fade-in, lightbox inexistente (no hay), l
 
 > Agregá una entrada nueva arriba de la más reciente. Formato:
 > `### YYYY-MM-DD — Título` + bullets con qué se hizo y qué queda pendiente.
+
+### 2026-11-04 — LFS158 (Kubernetes) + PDF alojado en el repo
+
+**Contexto:** Nelson agregó la card de `LFS158: Introduction to Kubernetes` (The Linux Foundation)
+en `#education`, con el link del portal. El link del portal
+(`trainingportal.linuxfoundation.org/learn/certificates/...`) **requiere login**: devuelve 302 a
+`/learn/sign_in`, y las variantes públicas (`/certificates/...`, `/verify?id=...`) dan 404.
+
+**Se hizo:**
+- Verificado que el link prefirmado de S3 que pasó Nelson funciona pero **vence a los 15 min**
+  (`X-Amz-Expires=900`), así que no sirve para el sitio.
+- Descargado el PDF y alojado en `assets/certificates/lfs158-introduction-to-kubernetes.pdf`
+  (133 KB, solo nombre + curso + fecha + ID `LF 9q0fvhrvme`, sin datos sensibles).
+- `index.html`: el `href` de esa card ahora apunta al PDF local. Verificado con
+  `python3 -m http.server`: HTML 200, PDF 200 `application/pdf`.
+
+**Pendiente:** commit + push (no se hizo: un push a `main` es deploy). Si aparecen más
+certificados sin URL pública, seguir el mismo patrón en `assets/certificates/`.
 
 ### 2026-09-30 — Creación de AGENTS.md (memoria entre agentes)
 
