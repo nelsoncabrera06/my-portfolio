@@ -259,6 +259,16 @@ highlight del link activo, animaciones fade-in, lightbox inexistente (no hay), l
 > Agregá una entrada nueva arriba de la más reciente. Formato:
 > `### YYYY-MM-DD — Título` + bullets con qué se hizo y qué queda pendiente.
 
+### 2026-11-24 — Preparación del certificado AI Fluency
+
+**Se hizo:**
+- Agregada la card placeholder `AI Fluency: Framework & Foundations` a `#ai-certifications`.
+- Actualizado el contador de credenciales Anthropic en Education de 10 a 11.
+- La fecha de emisión quedó establecida como Nov 24, 2026.
+- Agregado el enlace Skilljar real del certificado.
+
+**Pendiente:** ninguno.
+
 ### 2026-11-04 — LFS158 (Kubernetes) + PDF alojado en el repo
 
 **Contexto:** Nelson agregó la card de `LFS158: Introduction to Kubernetes` (The Linux Foundation)
